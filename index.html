@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<title>Example</title>
+</head>
+<body data-ng-app="example">
+
+	<div data-controller="ExampleController">
+		<div data-music-notation></div>
+	</div>
+
+	<script src="lib/underscore.js"></script>
+	<script src="lib/angular.js"></script>
+	
+	<script type="text/javascript">
+	(function(angular) {
+		var exampleModule = angular.module('example', []);
+		
+		exampleModule.controller('ExampleController', function($scope) {
+		});
+	})(angular);
+	</script>
+</body>
+</html>
